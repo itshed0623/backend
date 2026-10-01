@@ -67,62 +67,6 @@ app.delete('/api/product/:id', (req, res) => {
 
     res.json(Number(id)); 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// app.delete('/api/product/:id', (req, res) => {
-//     const { id } = req.params; // Extract ID from URL
-//     const initialLength = products.length;
-
-//     // Filter out the product with the matching ID
-//     products = products.filter((p) => p.id !== Number(id));
-
-//     // Return 404 if no item was removed
-//     if (products.length === initialLength) {
-//         return res.status(404).json({ error: "Product not found." });
-//     }
-
-//     // Return success response with deleted ID
-//     return res.status(200).json({ message: "Product deleted successfully.", id: Number(id) });
-// })
-
  
 app.listen(8080, () => {
     console.log('Server running with 8080');
